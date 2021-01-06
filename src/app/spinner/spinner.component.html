@@ -1,0 +1,23 @@
+<div class="loader__container">
+  <div class="loader__wrapper">
+    <div
+      class="loader"
+      [ngClass]="{
+        'loader--color-blue': color === colors.Blue,
+        'loader--color-green': color === colors.Green,
+        'loader--color-purple': color === colors.Purple
+      }"
+    ></div>
+  </div>
+
+  <div class="loader__wrapper">
+    <i
+      class="loading fas"
+      [ngClass]="{
+        'fa-spinner': kind === kinds.Dots,
+        'fa-fan': kind === kinds.Fan,
+        'fa-sync-alt': kind === kinds.Sync
+      }"
+    ></i>
+  </div>
+</div>

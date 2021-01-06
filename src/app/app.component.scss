@@ -1,0 +1,30 @@
+.container {
+  padding: 30px 50px;
+}
+
+.main-title {
+  text-align: center;
+  color: white;
+  font-size: 4rem;
+  font-family: system-ui;
+}
+
+.btn {
+  width: 4rem;
+  height: 1.5rem;
+  background-color: bisque;
+  &__colors,
+  &__kinds {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 15rem;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
